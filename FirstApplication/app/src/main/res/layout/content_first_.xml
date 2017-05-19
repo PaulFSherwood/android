@@ -38,7 +38,7 @@
         android:id="@+id/button3"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Open Thrid Activity"
+        android:text="Open Third Activity"
         android:onClick="showGreetings"
         android:layout_below="@+id/button2" />
 
