@@ -10,12 +10,12 @@
     tools:context="easyway2in.com.firstapplication.First_Activity">
 
     <TextView
-        android:layout_width="164dp"
+        android:id="@+id/greetings_text_view"
+        android:layout_width="220dp"
         android:layout_height="wrap_content"
         android:text="Greetings appear here..."
-        android:id="@+id/greetings_text_view"
-        tools:layout_editor_absoluteY="0dp"
-        tools:layout_editor_absoluteX="0dp" />
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="0dp" />
 
     <Button
         android:layout_width="394dp"

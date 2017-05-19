@@ -36,6 +36,9 @@ public class First_Activity extends AppCompatActivity {
 
     public void showGreetings(View view) {
         String message = "Welcome to my first app..";
+        if (textView.getText() == message) {
+            message = "Welcome to nothing looser";
+        }
         textView.setText(message);
     }
 
