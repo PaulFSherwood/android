@@ -1,5 +1,6 @@
 package easyway2in.com.firstapplication;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.design.widget.FloatingActionButton;
 import android.support.design.widget.Snackbar;
@@ -8,6 +9,7 @@ import android.support.v7.widget.Toolbar;
 import android.view.View;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.widget.Button;
 import android.widget.TextView;
 
 import org.w3c.dom.Text;
@@ -35,11 +37,18 @@ public class First_Activity extends AppCompatActivity {
     }
 
     public void showGreetings(View view) {
-        String message = "Welcome to my first app..";
-        if (textView.getText() == message) {
-            message = "Welcome to nothing looser";
+        String button_text;
+        button_text = ((Button) view).getText().toString();
+        if (button_text.equals("Open First Activity")) {
+            Intent intent = new Intent(this, SecondActivity.class);
+            startActivity(intent);
+        } else if (button_text.equals("Open Second Activity")) {
+            Intent intent = new Intent(this, SecondActivity.class);
+            startActivity(intent);
+        } else if (button_text.equals("Open Third Activity")) {
+            Intent intent = new Intent(this, ThirdActivity.class);
+            startActivity(intent);
         }
-        textView.setText(message);
     }
 
     @Override
