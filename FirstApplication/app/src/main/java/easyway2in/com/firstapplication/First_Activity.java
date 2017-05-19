@@ -8,13 +8,19 @@ import android.support.v7.widget.Toolbar;
 import android.view.View;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.widget.TextView;
+
+import org.w3c.dom.Text;
 
 public class First_Activity extends AppCompatActivity {
+    TextView textView;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.first_layout);
+        textView = (TextView)findViewById(R.id.greetings_text_view);
+
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
 
@@ -29,7 +35,8 @@ public class First_Activity extends AppCompatActivity {
     }
 
     public void showGreetings(View view) {
-        
+        String message = "Welcome to my first app..";
+        textView.setText(message);
     }
 
     @Override
