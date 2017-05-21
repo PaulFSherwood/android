@@ -10,12 +10,15 @@ import android.view.View;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.widget.Button;
+import android.widget.EditText;
 import android.widget.TextView;
 
 import org.w3c.dom.Text;
 
 public class First_Activity extends AppCompatActivity {
     TextView textView;
+    EditText message_text;
+    public final static String MESSAGE_KEY = "easyway2in.com.firstapplication.message_key";
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -52,7 +55,11 @@ public class First_Activity extends AppCompatActivity {
     }
 
     public void sendMessage(View view) {
-
+        message_text = (EditText)findViewById(R.id.message_text);
+        String message = message_text.getText().toString();
+        Intent intent = new Intent(this, ForthActivity.class);
+        intent.putExtra(MESSAGE_KEY, message);
+        startActivity(intent);
     }
 
     @Override
