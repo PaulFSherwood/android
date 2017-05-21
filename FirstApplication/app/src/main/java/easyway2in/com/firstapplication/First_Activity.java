@@ -54,14 +54,6 @@ public class First_Activity extends AppCompatActivity {
         }
     }
 
-    public void sendMessage(View view) {
-        message_text = (EditText)findViewById(R.id.message_text);
-        String message = message_text.getText().toString();
-        Intent intent = new Intent(this, ForthActivity.class);
-        intent.putExtra(MESSAGE_KEY, message);
-        startActivity(intent);
-    }
-
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
         // Inflate the menu; this adds items to the action bar if it is present.
