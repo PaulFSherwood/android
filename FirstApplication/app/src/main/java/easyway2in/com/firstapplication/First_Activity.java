@@ -51,6 +51,10 @@ public class First_Activity extends AppCompatActivity {
         }
     }
 
+    public void sendMessage(View view) {
+
+    }
+
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
         // Inflate the menu; this adds items to the action bar if it is present.

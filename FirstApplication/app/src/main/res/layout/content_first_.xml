@@ -51,6 +51,7 @@
         >
 
         <EditText
+            android:id="@+id/message_text"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:hint="@string/hint_message"
@@ -60,7 +61,9 @@
         <Button
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="@string/button_text"/>
+            android:text="@string/button_text"
+            android:onClick="sendMessage"
+            />
 
 
 
