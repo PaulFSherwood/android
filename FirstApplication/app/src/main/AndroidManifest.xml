@@ -21,6 +21,15 @@
         </activity>
         <activity android:name=".SecondActivity" />
         <activity android:name=".ThirdActivity" />
+        <activity
+            android:name=".ForthActivity"
+            android:label="@string/title_activity_forth"
+            android:parentActivityName=".First_Activity"
+            android:theme="@style/AppTheme.NoActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="easyway2in.com.firstapplication.First_Activity" />
+        </activity>
     </application>
 
 </manifest>
