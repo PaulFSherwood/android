@@ -59,6 +59,7 @@ public class First_Activity extends AppCompatActivity {
         message_text = (EditText)findViewById(R.id.message_text);
         String message = message_text.getText().toString();
         Intent intent = new Intent(this, ForthActivity.class);
+
         intent.putExtra(MESSAGE_KEY, message);
         startActivity(intent);
     }
