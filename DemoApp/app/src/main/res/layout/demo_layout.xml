@@ -51,12 +51,13 @@
             android:layout_height="wrap_content"
             android:text="@string/save"
             android:layout_below="@+id/last_name"
-            />
+            android:layout_alignParentRight="true" />
     </RelativeLayout>
     <Button
         android:layout_width="100dp"
         android:layout_height="wrap_content"
         android:text="@string/send"
-        android:layout_gravity="right"/>
+        android:layout_gravity="right"
+        />
 
 </LinearLayout>
