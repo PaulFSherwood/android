@@ -53,14 +53,18 @@
             android:layout_height="wrap_content"
             android:text="@string/save"
             android:layout_below="@+id/last_name"
-            android:layout_alignParentRight="true" />
+            android:layout_alignParentRight="true"
+            android:drawableLeft="@drawable/Linux_Zelot"
+            />
         <ImageButton
+            android:id="@+id/linux_zelot_button"
             android:layout_width="100dp"
             android:layout_height="wrap_content"
             android:src="@drawable/Linux_Zelot"
             android:text="@string/icon"
             android:layout_below="@+id/last_name"
-            android:layout_alignParentLeft="true" />
+            android:layout_alignParentLeft="true"
+            />
     </RelativeLayout>
 
     <Button
