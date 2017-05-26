@@ -33,7 +33,6 @@
         android:paddingLeft="16dp"
         android:orientation="horizontal"
         android:background="#0000FF">
-
         <EditText
             android:id="@+id/first_name"
             android:layout_width="0dp"
@@ -56,6 +55,7 @@
             android:layout_below="@+id/last_name"
             android:layout_alignParentRight="true" />
     </RelativeLayout>
+
     <Button
         android:layout_width="100dp"
         android:layout_height="wrap_content"
