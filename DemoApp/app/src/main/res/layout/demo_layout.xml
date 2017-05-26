@@ -54,9 +54,10 @@
             android:text="@string/save"
             android:layout_below="@+id/last_name"
             android:layout_alignParentRight="true" />
-        <Button
+        <ImageButton
             android:layout_width="100dp"
             android:layout_height="wrap_content"
+            android:src="@drawable/Linux_Zelot"
             android:text="@string/icon"
             android:layout_below="@+id/last_name"
             android:layout_alignParentLeft="true" />
